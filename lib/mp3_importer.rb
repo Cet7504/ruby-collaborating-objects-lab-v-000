@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     @files = Dir.entries(@path)
-+    @files.keep_if{|file| file.end_with?(".mp3")}
+    @files.keep_if{|file| file.end_with?(".mp3")}
   end
 
   def import
